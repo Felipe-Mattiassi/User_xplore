@@ -67,10 +67,10 @@ body {
 
 
 #linha2 {
-    position: absolute;
+    position: relative;
     top: 133.5%;
     max-width: 100%;
-    min-width: 1550px;
+    min-width: 1800px;
     height: auto;
 }
 
@@ -194,10 +194,8 @@ header {
 .transicao-container {
     display: flex;
     gap: 2vh;
-    margin: 17vh 5vw 17vh 2vw;
+    margin: 17vh 5vw 0vh 2vw;
     width: 100%;
-    
-    
 }
 
 #transicao {
