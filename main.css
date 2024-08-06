@@ -61,6 +61,7 @@ body {
     top: 13%;
     z-index: -1;
     max-width: 100%;
+    min-width: 1800px;
     height: auto;
 }
 
