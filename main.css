@@ -6,7 +6,10 @@
     --laranja-claro: #FDA346;
     --cor-fundo: #171717;
     --azul: #1000C0;
-    --cor-quadrado: #4736ff34;
+    --cor-quadrado: #4736ff57;
+    --azul-claro: #2E89FF;
+    --cinza-background: #282828;
+    --cinza-texto: #CECECE;
 
 }
 
@@ -16,13 +19,11 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    
+    font-family: 'Outfit', sans-serif;
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
     /* background: url(./img/./background/DegradeTopoOpacidade74.png); */
-    
     /* background-repeat: no-repeat; */
     background-size: cover;
     background-color: #171717;
@@ -34,6 +35,8 @@ body {
     z-index: -1;
     max-width: 100%;
     height: auto;
+    user-select: none;
+    pointer-events: none;
 }
 
 #laranja_cima {
@@ -43,16 +46,22 @@ body {
     top: 0;
     max-width: 100%;
     height: auto;
+    user-select: none;
+    pointer-events: none;
 }
 
 #azul_fundo {
     position: absolute;
-    /* z-index: -2; */
+    z-index: -2;
     z-index: -1;
     opacity: 100%;
     top: 0;
     max-width: 100%;
+    min-width: 100%;
     height: auto;
+    max-height: 76.5vw;
+    user-select: none;
+    pointer-events: none;
 }
 
 
@@ -63,14 +72,60 @@ body {
     max-width: 100%;
     min-width: 1800px;
     height: auto;
+    user-select: none;
+    pointer-events: none;
 }
 
 
 #linha2 {
+    position: absolute;
+    max-width: 100%;
+    right: 0;
+    z-index: -3;
+    user-select: none;
+    pointer-events: none;
+}
+
+.linha2 {
+    
+}
+/* #linha2 {
     position: relative;
     max-width: 100%;
     min-width: 1800px;
     height: auto;
+} */
+
+#linha3 {
+    position: absolute;
+    z-index: -1;
+    max-width: auto;
+    max-height: 598px;
+    height: 100%;
+    right: 0;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* #bolinha1 {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    height: auto;
+    right: 29%;
+    top: 318.2%;
+} */
+
+#laranja_baixo {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    max-width: 100%;
+    height: auto;
+    top: 220vh;
+    user-select: none;
+    pointer-events: none;
 }
 
 
@@ -109,6 +164,17 @@ nav ul li {
     list-style-type: none;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 15px;
+    transition: transform 0.5s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    
+}
+
+nav ul{
+    overflow-y: hidden;
     
 }
 
@@ -117,7 +183,7 @@ nav ul li {
     border: solid 2px var(--laranja-claro);
     border-radius: 13px;
     padding: 0.8vh 1.3vh;
-    
+    margin-right: 0.2vw;
 }
 
 .header-container ul li a{
@@ -133,13 +199,16 @@ header {
 
 #inicio {
     margin-bottom: 8vh;
+    
 }
 
 
 .inicio-container h2{
-    font-size: 70px; 
+    font-size: 65px; 
     /* 4.4em */
+    /* animation: vemDaEsquerda 3s ease; */
 }
+
 
 .inicio-container {
     display: grid;
@@ -150,11 +219,19 @@ header {
 
 .esquerda h2 {
     overflow-y: hidden;
+    
+}
 
+.esquerda {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 0 0vw 5vh 5vw;
+    /* animation: cresce 5s ease; */
 }
 
 .direita {
     margin: auto;
+    /* animation: cresce 5s ease; */
 }
 
 #texto-inicio {
@@ -165,71 +242,231 @@ header {
 #logo_normal {
     width: 400px;
     padding-bottom: 7vh;
+    /* animation: vemDaDireita 2.5s ease; */
+
 }
 
 .button {
-    padding: 3vh 4vw;
+    max-width: 12vw;
+    width: 100%;
+    padding: 3vh 1vw;
     margin-top: 7vh;
     margin-right: 1vw;
     border-radius: 40px;
-    
-
     font-size: 20px;
     color: #ffff;
-    
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.15vw;
+    transition: transform 0.5s ease;
+}
+
+
+.button:hover {
+    transform: scale(1.1);
 }
 
 
 #botao1 {
-    background-color: var(--laranja);
+    background: linear-gradient(to bottom right, var(--laranja), var(--laranja-claro) 95%);
     border: none;
 }
+
 
 #botao2 {
     background-color: transparent;
     border: solid 2px #FDA346;
+    color: var(--laranja-claro);
 }
 
-.transicao-container {
+/* .transicao-container {
     display: flex;
     gap: 2vh;
-    margin: 25vh 5vw 0vh 2vw;
+    margin: 20vh 0vw 0vh 0vw;
     width: 100%;
+    padding: 2vh 0 2vh 2vh;
+} */
+.transicao-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-top: 4.5vh;
+    padding: 2vh 2vh;
+    overflow-y: hidden;
 }
 
+
 #transicao {
-    margin: 0 0 0 8vw;
+    /* margin: 0 0 0 7.5vw; */
+    display: grid;
+    grid-template-columns: 7.5% 85% 7.5%;
+    padding-bottom: 4vh;
 }
 
 
 .quadrados {
-    z-index: -1;
+    z-index: 3;
     max-width:  15.6vw;
-    max-height:  22.4vh;
-    width: 100%;
+    max-height:  24.4vh;
     width: 100%;
     height: 100%;
     overflow-y: hidden;
     background-color:  var(--cor-quadrado);
     border-radius: 40px 40px 10px 40px;
     align-items: center;
-    
 }
+
+.quadrados:hover {
+    
+} 
 
 .quadrados-container {
     text-align: center;
-    max-width: 13.6vw;
+    max-width: 15vw;
     width: 100%;
-    margin: 4vh auto 2vh auto ;
+    margin: 4vh auto 4vh auto;
+}
+
+.quadrado-display {
+    overflow-y: hidden;
+    display: grid;
+    grid-template-rows: 42% 50%;
+    gap: 8%;
     
+}
+
+.sgv {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 
 .text-quadrado {
     font-size: 18px;
-    margin-top: 2.2vh;
+    margin-top: 1vh;
+    padding: 0;
+    overflow-y: hidden;
 }
 
 svg {
     color: rgba(255, 255, 255, 0.767);
+    padding: 0;
+}
+
+section #brands {
+    
+}
+
+.prova-social {
+    
+    margin: 38vh auto 13vh auto;
+    display: flex;
+    
+}
+
+.prova-social h3 {
+    overflow: hidden;
+    font-size: 43px;
+    font-weight: bold;
+    margin-right: 5vw;
+}
+
+.azul {
+    color: var(--azul-claro);
+}
+
+.prova-social p {
+    max-width: 570px;
+    margin-top: 1vh;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.brands-container {
+    background-color: var(--cinza-background);
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 3vw;
+    padding: 7vh 0 7vh 0;
+}
+
+.cima {
+    display: grid;
+    grid-template-columns: 7.5% 85% 7.5%;
+}
+
+
+.brands-cima{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+}
+
+
+.baixo {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+
+.brands-baixo {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+}
+
+
+.brand {
+
+}
+
+
+
+#beneficios {
+    padding-bottom: 100vh;
+}
+
+
+@keyframes vemDaEsquerda {
+    0% {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes vemDaDireita {
+    0% {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes cresce {
+    0% {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
 }
