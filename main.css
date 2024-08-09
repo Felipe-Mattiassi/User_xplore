@@ -339,6 +339,10 @@ header {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    margin: 0 auto;
+    align-items: center;
+    width: 54px;
+    margin-bottom: 1vh;
 }
 
 
@@ -476,8 +480,12 @@ section #brands {
 @media screen and (max-width: 1280px) {
     .header-container nav ul{
         gap: 4vw;
+        font-size: 15px;
     }
-    
+
+    #logo-header {
+        width: 45px;
+    }
 
     .header-container {
         margin-top: 0;
@@ -486,17 +494,22 @@ section #brands {
 
     
     .inicio-container h2 {
-        font-size: 55px;
+        font-size: 50px;
         
     }
 
     .inicio-container {
-        margin-top: 13vh;
+        margin-top: 10vh;
+        margin-bottom: 14vh;
     }
 
     #logo_normal {
-        width: 350px;
-        padding-bottom: 5vh;
+        width: 320px;
+        padding-bottom: 7vh;
+    }
+
+    #texto-inicio  {
+        font-size: 15px;
     }
 
 
@@ -514,7 +527,7 @@ section #brands {
         max-width: 11vw;
         width: 100%;
         padding: 3vh 0vw;
-        margin-top: 7vh;
+        margin-top: 13vh;
         margin-right: 1vw;
         border-radius: 40px;
         color: #ffff;
@@ -530,34 +543,41 @@ section #brands {
         max-width: 15vw;
         width: 100%;
         margin: 4vh auto 4vh auto;
+        align-items: center;
     }
 
     
 
     .text-quadrado {
-    font-size: 17px;
+    font-size: 14px;
     padding-bottom: 10px;
     }
 
-    .quadrado-display {
+    .sgv {
+        margin: 0 auto;
+        align-items: center;
+        width: 40px;
+        margin-bottom: 1vh;
+    }
 
+    .quadrado-display {
         gap: 0%;
     }
 
     .prova-social {
-
         margin: 35vh auto 10vh auto;
     }
 
     .prova-social h3 {
         overflow: hidden;
-        font-size: 38px;
+        font-size: 35px;
         font-weight: bold;
         margin-right: 5vw;
     }
 
     .prova-social p {
-        max-width: 500px;
+        max-width: 400px;
+        font-size: 13px;
     }
 
     .brand img{
@@ -626,7 +646,12 @@ section #brands {
             margin: 4vh auto 4vh auto;
         }
 
-        
+        .sgv {
+            margin: 0 auto;
+            align-items: center;
+            width: 50px;
+            margin-bottom: 1vh;
+        }
 
         .text-quadrado {
         font-size: 17px;
