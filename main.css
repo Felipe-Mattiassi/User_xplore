@@ -87,7 +87,8 @@ body {
 }
 
 .linha2 {
-    
+    padding: 0;
+    margin:0;
 }
 /* #linha2 {
     position: relative;
@@ -214,7 +215,6 @@ header {
     display: grid;
     grid-template-columns: 45% 55%;
     align-items: center;
-
 }
 
 .esquerda h2 {
@@ -225,7 +225,7 @@ header {
 .esquerda {
     overflow-y: hidden;
     overflow-x: hidden;
-    padding: 0 0vw 5vh 5vw;
+    padding: 0 0vw 5vh 0vw;
     /* animation: cresce 5s ease; */
 }
 
@@ -252,6 +252,7 @@ header {
     padding: 3vh 1vw;
     margin-top: 7vh;
     margin-right: 1vw;
+    margin-left: 1vw;
     border-radius: 40px;
     font-size: 20px;
     color: #ffff;
@@ -380,6 +381,7 @@ section #brands {
     margin-top: 1vh;
     font-size: 16px;
     font-weight: lighter;
+    color: var(--cinza-texto);
 }
 
 
@@ -470,3 +472,196 @@ section #brands {
         transform: scale(1);
     }
 }
+
+@media screen and (max-width: 1280px) {
+    .header-container nav ul{
+        gap: 4vw;
+    }
+    
+
+    .header-container {
+        margin-top: 0;
+        align-items: center;
+    }
+
+    
+    .inicio-container h2 {
+        font-size: 55px;
+        
+    }
+
+    .inicio-container {
+        margin-top: 13vh;
+    }
+
+    #logo_normal {
+        width: 350px;
+        padding-bottom: 5vh;
+    }
+
+
+    .direita {
+        height: 100%;
+        margin-left: 5vw;
+    }
+
+    .direita img{
+        width: 90%;
+        
+    }
+
+    .button {
+        max-width: 11vw;
+        width: 100%;
+        padding: 3vh 0vw;
+        margin-top: 7vh;
+        margin-right: 1vw;
+        border-radius: 40px;
+        color: #ffff;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 0.15vw;
+        transition: transform 0.5s ease;
+    }
+    
+
+    .quadrados-container {
+        text-align: center;
+        max-width: 15vw;
+        width: 100%;
+        margin: 4vh auto 4vh auto;
+    }
+
+    
+
+    .text-quadrado {
+    font-size: 17px;
+    padding-bottom: 10px;
+    }
+
+    .quadrado-display {
+
+        gap: 0%;
+    }
+
+    .prova-social {
+
+        margin: 35vh auto 10vh auto;
+    }
+
+    .prova-social h3 {
+        overflow: hidden;
+        font-size: 38px;
+        font-weight: bold;
+        margin-right: 5vw;
+    }
+
+    .prova-social p {
+        max-width: 500px;
+    }
+
+    .brand img{
+        width: 70%;
+        height: auto;
+    }
+}
+
+    @media screen and (min-width: 1281px) and (max-width: 1537px) {
+        .header-container nav ul{
+            gap: 4vw;
+        }
+        
+
+        .header-container {
+            margin-top: 0;
+            align-items: center;
+        }
+
+        
+        .inicio-container h2 {
+            font-size: 55px;
+            
+        }
+
+        .inicio-container {
+            margin-top: 6.5vh;
+            margin-bottom: 6.5vh;
+        }
+
+        #logo_normal {
+            width: 350px;
+            padding-bottom: 5vh;
+        }
+
+
+        .direita {
+            height: 100%;
+            margin-left: 5vw;
+        }
+
+        .direita img{
+            width: 90%;
+            
+        }
+
+        .button {
+            max-width: 11vw;
+            width: 100%;
+            padding: 3vh 0vw;
+            margin-top: 7vh;
+            margin-right: 1vw;
+            border-radius: 40px;
+            color: #ffff;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 0.15vw;
+            transition: transform 0.5s ease;
+        }
+        
+
+        .quadrados-container {
+            text-align: center;
+            max-width: 15vw;
+            width: 100%;
+            margin: 4vh auto 4vh auto;
+        }
+
+        
+
+        .text-quadrado {
+        font-size: 17px;
+        padding-bottom: 10px;
+        }
+
+        .quadrado-display {
+
+            gap: 0%;
+        }
+
+        .prova-social {
+    
+            margin: 35vh auto 10vh auto;
+        }
+
+        .prova-social h3 {
+            overflow: hidden;
+            font-size: 38px;
+            font-weight: bold;
+            margin-right: 5vw;
+        }
+
+        .prova-social p {
+            max-width: 500px;
+        }
+
+        .brand img{
+            width: 70%;
+            height: auto;
+        }
+    }
+
+
+
+
+
+
