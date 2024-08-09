@@ -563,6 +563,13 @@ section #brands {
     .quadrado-display {
         gap: 0%;
     }
+    .transicao-container {
+        gap: 1.5%;
+    }
+
+    #transicao {
+        grid-template-columns: 10% 80% 10%;
+    }
 
     .prova-social {
         margin: 35vh auto 10vh auto;
