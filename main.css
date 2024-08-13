@@ -10,6 +10,7 @@
     --azul-claro: #2E89FF;
     --cinza-background: #282828;
     --cinza-texto: #CECECE;
+    --branco-fundo: #EBEBEB;
 
 }
 
@@ -89,6 +90,7 @@ body {
 .linha2 {
     padding: 0;
     margin:0;
+    
 }
 
 #linha3 {
@@ -103,9 +105,29 @@ body {
     pointer-events: none;
 }
 
+#linha4 {
+    position: absolute;
+    max-width: 100%;
+    top: 4vh;
+    left: 0;
+    z-index: 3;
+    user-select: none;
+    pointer-events: none;
+}
+
+#linha5 {
+    position: absolute;
+    max-width: 100%;
+    right: 0;
+    top: 20.5vh;
+    z-index: 3;
+    user-select: none;
+    pointer-events: none;
+}
+
 #laranja_baixo {
     position: absolute;
-    z-index: -1;
+    z-index: -3;
     right: 0;
     max-width: 100%;
     height: auto;
@@ -326,10 +348,6 @@ header {
     overflow-y: hidden;
 }
 
-svg {
-    color: rgba(255, 255, 255, 0.767);
-    padding: 0;
-}
 
 section #brands {
     
@@ -403,8 +421,172 @@ section #brands {
 
 
 #beneficios {
-    /* padding-bottom: 100vh; */
+    margin-top: 38vh;
+
 }
+
+.beneficios-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.beneficios-container h3{
+    font-size: 70px;
+    color: var(--laranja);
+    margin-bottom: 8vh;
+}
+
+.beneficios-quadrado-display {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 0.8vw;
+    margin-right: 1vw;
+}
+
+
+.beneficios-quadrado {
+    border-radius: 20px;
+    background-color: black;
+    /* height: 200px; */
+    width: 18.5vw;
+    /* height: 45vh; */
+    align-items: center;
+    overflow: hidden;
+    height: 377px;
+}
+
+.beneficios-quadrado h4 {
+    color:#fff;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 5vh;
+}
+
+.container-quadrado {
+    margin: 5vh 3vh;
+}
+
+.container-quadrado h4 {
+    font-size: 22px;
+    margin-bottom: 2vh;
+    margin-left: 1vh;
+}
+
+
+.mini-quadrado {
+    color: var(--cinza-texto);
+    background-color: var(--cor-fundo);
+    padding: 2vh;
+    font-size: 16px;
+    border-radius: 15px;
+    height: 223px;
+    
+
+}
+
+.quadrado-especial {
+    background: linear-gradient(to bottom right, var(--laranja), #1E0098 130%);
+    
+}
+
+.quadrado-especial .mini-quadrado {
+    background-color: var(--branco-fundo);
+    color: var(--cor-fundo);
+}
+
+
+.laranja {
+    color: var(--laranja);
+}
+
+.display-invisivel {
+    padding-bottom: 30vh;
+}
+
+#sobre {
+    margin-top: 30vh;
+    padding-top: 20vh;
+    position: relative;
+}
+
+.teste {
+    position: relative;
+}
+
+.mini-titulo {
+    position: relative;
+    margin-left: 49.5vw;
+}
+
+.display-sobre {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
+.sobre-container {
+    
+}
+
+.esquerda-sobre {
+    
+}
+
+.esquerda-sobre img {
+    margin-top: 4vh;
+}
+
+.direita-sobre {
+    align-items: top;
+    /* position: relative; */
+
+}
+
+.direita-sobre h4 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.h2-sobre {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.azul {
+    color: var(--azul-claro);
+    font-size: 22px;
+    padding-top: 0;
+}
+
+.flex {
+    display: flex;
+    margin-top: 2vh;
+    font-size: 16px;
+} 
+
+
+.texto-sobre {
+    margin-left: 1vw;
+}
+
+.sgv-beneficios {
+    height: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes vemDaEsquerda {
