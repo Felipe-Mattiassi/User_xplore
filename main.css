@@ -490,7 +490,7 @@ section #brands {
     font-size: 16px;
     border-radius: 15px;
     height: 223px;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 
 }
@@ -858,7 +858,7 @@ textarea:focus {
 
     .beneficios-quadrado {
         width: 18.5vw;
-        height: 300px;
+        height: 305px;
     }
 
     .beneficios-quadrado h4 {
@@ -867,7 +867,7 @@ textarea:focus {
 
     .mini-quadrado {
         font-size: 13px;
-        height: 200px;
+        height: 210px;
     }
 
     #linha4 {
