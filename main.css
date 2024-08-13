@@ -723,7 +723,7 @@ textarea:focus {
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
 
     .header-container nav ul{
         gap: 4vw;
@@ -911,209 +911,235 @@ textarea:focus {
 }
 
 
-form {
-    gap: 2vh;
-}
-
-
-
-input {
-    padding: 10px;
-    max-width: 887px;
-    width: 100%;
-    height: 50px;
-    font-size: 15px;
-    
-}
-
-
-textarea {
-
-    padding: 10px 10px; 
-    max-width: 887px;
-    width: 100%;
-    height: 150px;
-    font-size: 15px;
-}
-
-input::placeholder,
-textarea::placeholder {
-    font-size: 15px;
-}
-
-textarea:focus {
-    outline: none;
-}
-
-
-}
-
-    @media screen and (min-width: 1400px) and (max-width: 1800px) {
-
-
-        .header-container nav ul{
-            gap: 4vw;
-        }
-        
-
-        .header-container {
-            margin-top: 0;
-            align-items: center;
-        }
-
-        
-        .inicio-container h2 {
-            font-size: 55px;
-            
-        }
-
-        .inicio-container {
-            margin-top: 6.5vh;
-            margin-bottom: 18vh;
-        }
-
-        #logo_normal {
-            width: 350px;
-            padding-bottom: 5vh;
-        }
-
-
-        .direita {
-            height: 100%;
-            margin-left: 5vw;
-        }
-
-        .direita img{
-            width: 90%;
-            
-        }
-
-        .button {
-            max-width: 11vw;
-            width: 100%;
-            padding: 3vh 0vw;
-            margin-top: 7vh;
-            margin-right: 1vw;
-            border-radius: 40px;
-            color: #ffff;
-            font-weight: 500;
-            font-size: 15px;
-            letter-spacing: 0.15vw;
-            transition: transform 0.5s ease;
-        }
-        
-
-        .quadrados-container {
-            text-align: center;
-            max-width: 15vw;
-    
-            width: 100%;
-            margin: 4vh auto 4vh auto;
-        }
-
-        .sgv {
-            margin: 0 auto;
-            align-items: center;
-            width: 45px;
-            margin-bottom: 1vh;
-            padding-top:1vh;
-            padding-bottom: 3vh;
-        }
-
-        .text-quadrado {
-        font-size: 15px;
-        padding-bottom: 10px;
-        }
-
-        .quadrado-display {
-
-            gap: 0%;
-        }
-
-        .prova-social {
-    
-            margin: 35vh auto 10vh auto;
-        }
-
-        .prova-social h3 {
-            overflow: hidden;
-            font-size: 38px;
-            font-weight: bold;
-            margin-right: 5vw;
-        }
-
-        .prova-social p {
-            max-width: 500px;
-        }
-
-        .brand img{
-            width: 60%;
-            height: auto;
-        }
-        
-        #linha3 {
-            max-width: auto;
-            max-height: 598px;
-            height: 60%;
-            
-        }
-
-        #beneficios {
-            margin-top: 34vh;
-        }
-
-        .beneficios-container h3{
-            font-size: 60px;
-        }
-
-        .beneficios-quadrado h4 {
-            font-size: 18px;
-            margin-bottom: 4vh;
-        }
-
-        .mini-quadrado {
-            font-size: 15px;
-            height: 237px;
-            overflow: hidden;
-        }
-
-
-        .display-invisivel {
-            padding-bottom: 0vh;
-        }
-
-        #sobre {
-            margin-top: 25vh;
-        }
-
-        #linha4 {
-            height: 50%;
-        }
-
-        #linha5 {
-            width: 40%;
-            top: 21.5vh;
-        }
-
-        .esquerda-sobre img {
-            max-width: 90%;
-        }
-
-        .direita-sobre h4 {
-            font-size: 22px;
-        }
-
-        .h2-sobre {
-            font-size: 60px;
-            
-        }
-
-        .contato-invisivel {
-            grid-template-columns: 68% 31%;
-            gap: 1%;
-        }
-
+    form {
+        gap: 2vh;
     }
+
+
+
+    input {
+        padding: 10px;
+        max-width: 887px;
+        width: 100%;
+        height: 50px;
+        font-size: 15px;
+        
+    }
+
+
+    textarea {
+
+        padding: 10px 10px; 
+        max-width: 887px;
+        width: 100%;
+        height: 150px;
+        font-size: 15px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1800px) {
+
+
+    .header-container nav ul{
+        gap: 4vw;
+    }
+    
+
+    .header-container {
+        margin-top: 0;
+        align-items: center;
+    }
+
+    
+    .inicio-container h2 {
+        font-size: 55px;
+        
+    }
+
+    .inicio-container {
+        margin-top: 6.5vh;
+        margin-bottom: 18vh;
+    }
+
+    #logo_normal {
+        width: 350px;
+        padding-bottom: 5vh;
+    }
+
+
+    .direita {
+        height: 100%;
+        margin-left: 5vw;
+    }
+
+    .direita img{
+        width: 90%;
+        
+    }
+
+    .button {
+        max-width: 11vw;
+        width: 100%;
+        padding: 3vh 0vw;
+        margin-top: 7vh;
+        margin-right: 1vw;
+        border-radius: 40px;
+        color: #ffff;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 0.15vw;
+        transition: transform 0.5s ease;
+    }
+    
+
+    .quadrados-container {
+        text-align: center;
+        max-width: 15vw;
+
+        width: 100%;
+        margin: 4vh auto 4vh auto;
+    }
+
+    .sgv {
+        margin: 0 auto;
+        align-items: center;
+        width: 45px;
+        margin-bottom: 1vh;
+        padding-top:1vh;
+        padding-bottom: 3vh;
+    }
+
+    .text-quadrado {
+    font-size: 15px;
+    padding-bottom: 10px;
+    }
+
+    .quadrado-display {
+
+        gap: 0%;
+    }
+
+    .prova-social {
+
+        margin: 35vh auto 10vh auto;
+    }
+
+    .prova-social h3 {
+        overflow: hidden;
+        font-size: 38px;
+        font-weight: bold;
+        margin-right: 5vw;
+    }
+
+    .prova-social p {
+        max-width: 500px;
+    }
+
+    .brand img{
+        width: 60%;
+        height: auto;
+    }
+    
+    #linha3 {
+        max-width: auto;
+        max-height: 598px;
+        height: 60%;
+        
+    }
+
+    #beneficios {
+        margin-top: 34vh;
+    }
+
+    .beneficios-container h3{
+        font-size: 60px;
+    }
+
+    .beneficios-quadrado h4 {
+        font-size: 18px;
+        margin-bottom: 4vh;
+    }
+
+    .mini-quadrado {
+        font-size: 15px;
+        height: 237px;
+        overflow: hidden;
+    }
+
+
+    .display-invisivel {
+        padding-bottom: 0vh;
+    }
+
+    #sobre {
+        margin-top: 25vh;
+    }
+
+    #linha4 {
+        height: 50%;
+    }
+
+    #linha5 {
+        width: 40%;
+        top: 21.5vh;
+    }
+
+    .esquerda-sobre img {
+        max-width: 90%;
+    }
+
+    .direita-sobre h4 {
+        font-size: 22px;
+    }
+
+    .h2-sobre {
+        font-size: 60px;
+        
+    }
+
+    .contato-invisivel {
+        grid-template-columns: 68% 31%;
+        gap: 1%;
+    }
+
+    .contato-area h3 {
+        font-size: 55px;
+    }
+    
+    form {
+        gap: 2vh;
+    }
+
+
+
+    input {
+        height: 60px;
+        font-size: 15px;
+    }
+
+
+    textarea {
+
+        padding: 10px 10px; 
+        max-width: 887px;
+        width: 100%;
+        height: 230px;
+        font-size: 15px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 15px;
+    }
+
+}
 
 
 
