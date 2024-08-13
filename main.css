@@ -11,7 +11,7 @@
     --cinza-background: #282828;
     --cinza-texto: #CECECE;
     --branco-fundo: #EBEBEB;
-
+    --fundo-input: #D9D9D9
 }
 
 
@@ -656,6 +656,7 @@ input {
     height: 70px;
     font-size: 19px;
     color: var(--cor-fundo);
+    background-color: var(--fundo-input);
 }
 
 input:focus {
@@ -673,6 +674,7 @@ textarea {
     height: 280px;
     font-size: 19px;
     color: var(--cor-fundo);
+    background-color: var(--fundo-input);
 }
 
 input::placeholder,
