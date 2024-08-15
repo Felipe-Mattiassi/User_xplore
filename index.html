@@ -330,18 +330,17 @@
                     <p class="text-contato">
                         Fale com nossos especialistas e descubra com podemos ajudar sua empresa
                     </p>
-                    <form class="block" action="https://formsubmit.co/fepazmati@gmail.com" method="post">
-                        <input id="name" name="name" type="text" placeholder="Nome">
-                        <input id="email" name="email" type="email" placeholder="Email">
-                        <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
-                        <button id="btn-p" type="submit" class="button">Enviar</button>
+                    <form class="block" action="https://api.staticforms.xyz/submit" method="post">
+                        <input id="name" name="name" type="text" placeholder="Nome" required>
+                        <input id="email" name="email" type="email" placeholder="Email" required>
+                        <textarea id="mensagem" name="message" placeholder="Mensagem"></textarea>
 
-                        <input type="hidden" name="_subject" value="Novo contato UserXplore">
-                        <input type="text" name="_honey" style="display:none">
-                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="accessKey" value="633a7c43-f7f1-4432-b0f3-b01b0bb73d5e">
+                        <input type="hidden" name="subject" value="Contato Novo UserXplore">
+                        
+                        <!-- <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> -->
 
-
-
+                        <button id="btn-p" class="button" type="submit" value="submit">Enviar</button>
                     </form>
                 </div>
                 <div id="contato-direita" class="contato-direita"></div>
