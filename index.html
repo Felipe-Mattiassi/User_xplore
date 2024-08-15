@@ -330,19 +330,24 @@
                     <p class="text-contato">
                         Fale com nossos especialistas e descubra com podemos ajudar sua empresa
                     </p>
-                    <form class="block" action="submit">
-                        <input id="name" type="text" placeholder="Nome">
-                        <input id="email" type="email" placeholder="Email">
-                        <textarea id="mensagem" placeholder="Mensagem"></textarea>
+                    <form class="block" action="https://formsubmit.co/fepazmati@gmail.com" method="post">
+                        <input id="name" name="name" type="text" placeholder="Nome">
+                        <input id="email" name="email" type="email" placeholder="Email">
+                        <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+                        <button id="btn-p" type="submit" class="button">Enviar</button>
+
+                        <input type="hidden" name="_subject" value="Novo contato UserXplore">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+
+
 
                     </form>
-                    
                 </div>
-
-
                 <div id="contato-direita" class="contato-direita"></div>
             </div>
         </div>
     </section>
+    <script src="main.js"></script>
 </body>
 </html>
