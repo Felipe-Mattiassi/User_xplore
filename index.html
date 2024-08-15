@@ -327,9 +327,6 @@
             <div id="contato-invisivel" class="contato-invisivel">
                 <div id="contato-area" class="contato-area">
                     <h3>Contato.</h3>
-                    <p class="text-contato">
-                        Fale com nossos especialistas e descubra com podemos ajudar sua empresa
-                    </p>
                     <form class="block" action="https://api.staticforms.xyz/submit" method="post">
                         <input id="name" name="name" type="text" placeholder="Nome" required>
                         <input id="email" name="email" type="email" placeholder="Email" required>
@@ -337,16 +334,40 @@
 
                         <input type="hidden" name="accessKey" value="633a7c43-f7f1-4432-b0f3-b01b0bb73d5e">
                         <input type="hidden" name="subject" value="Contato Novo UserXplore">
-                        
+
                         <!-- <input type="hidden" name="redirectTo" value="https://example.com/contact/success"> -->
 
-                        <button id="btn-p" class="button" type="submit" value="submit">Enviar</button>
+                        <button id="btn-contato" class="btn-contato" type="submit" value="submit">Enviar</button>
                     </form>
                 </div>
-                <div id="contato-direita" class="contato-direita"></div>
+                <div id="contato-direita" class="contato-direita">
+                    <div class="contato-direita-container">
+                        <div class="text-contato">
+                            <div></div>
+                            <p>
+                                Fale com nossos especialistas e descubra com podemos ajudar sua empresa
+                            </p>
+                            <div></div>
+                        </div>
+                        <div class="contato-direita-img">
+                            <img src="./img/animacao/ilustração - contato.png" alt="ilustração equipe">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div></div>
+        <div class="footer">
+            <img src="./img/logo/Logo_user_xplore.png" alt="">
+            <p>Copyright © 2024 UserXplore. Todos os direitos reservados. CNPJ:</p>
+            <nav>
+                Desenvolvido por <a href="https://www.instagram.com/felipemattiassi/" target="_blank">Felipe Mattiassi</a>
+            </nav>
+        </div>
+        <div></div>
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>
