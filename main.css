@@ -772,7 +772,7 @@ footer a {
 #redireciona-sec {
     margin-top: 1vh;
     display: grid;
-    grid-template-rows: 25% 60% 15% ;
+    grid-template-rows: 15% 70% 15% ;
     height: 100vh;
 }
 
@@ -813,6 +813,11 @@ footer a {
 .contato-area-redireciona{
     border-radius: 39px;
     
+}
+
+.btn-final {
+    background-color: var(--laranja);
+    border: none;
 }
 
 
@@ -1076,6 +1081,29 @@ footer a {
 
     footer img{
         width: 150px;
+    }
+
+    #redireciona h1 {
+        font-size: 45px;
+    }
+
+    .text-redireciona {
+        font-size: 15px;
+    }
+
+    .img-redireciona {
+        width: 20px;
+    }
+
+    .btn-final {
+        margin-top: 7vh;
+    }
+
+    #redireciona-sec {
+        margin-top: 1vh;
+        display: grid;
+        grid-template-rows: 15% 75% 10% ;
+        height: 100vh;
     }
 
 }
